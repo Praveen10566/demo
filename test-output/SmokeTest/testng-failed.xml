@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite parallel="tests" name="Failed suite [SmokeTest]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" parallel="tests" name="Firefox(failed)">
+    <parameter name="browserName" value="firefox"/>
+    <classes>
+      <class name="com.testscripts.TestNGCrossBrowser">
+        <methods>
+          <include name="temp"/>
+          <include name="invokeApp"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.testscripts.TestNGCrossBrowser -->
+    </classes>
+  </test> <!-- Firefox(failed) -->
+</suite> <!-- Failed suite [SmokeTest] -->
